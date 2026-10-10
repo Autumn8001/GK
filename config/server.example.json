@@ -1,0 +1,9 @@
+{
+  "host": "your-server-ip-or-domain",
+  "port": 22,
+  "user": "root",
+  "key_path": "~/.ssh/id_ed25519",
+  "remote_dir": "/opt/cliproxyapi/auths",
+  "stage_dir": "/tmp/cpa-push",
+  "local_dir": "./output/cpa_auths"
+}

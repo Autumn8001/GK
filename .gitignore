@@ -1,0 +1,78 @@
+# =========================================================================
+# Git 忽略规则 —— 严格防止敏感数据、运行凭证与日志泄露
+# =========================================================================
+
+# 1. 账号、邮箱与密码数据
+output/mailboxes/*.txt
+!output/mailboxes/outlook-accounts.example.txt
+accounts_*.txt
+used_emails.txt
+*.tsv
+*.csv
+
+# 2. 生成的授权令牌与凭证
+output/cpa_auths/*.json
+!output/cpa_auths/.gitkeep
+cpa_auths/
+*.token
+*.pem
+*.key
+*.id_rsa
+*.id_ed25519
+
+# 3. 真实运行配置文件
+config/config.json
+config/server.json
+config.json
+server.json
+.env
+.env.*
+!.env.example
+
+# 4. 运行日志与过程数据
+*.log
+logs/
+output/logs/
+
+# 5. Python 编译产物与虚拟环境
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+venv/
+ENV/
+env/
+
+# 6. 系统与编辑器配置
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+
+# 7. 临时与缓存文件
+*.tmp
+*.temp
+*.bak
+.cache/

@@ -1,0 +1,4 @@
+# 邮箱账号格式示例 (邮箱----密码 或 邮箱----密码----辅助邮箱)
+# 请将实际账号放置于 outlook-accounts.txt (已自动加入 .gitignore 严防泄漏)
+example_user_1@outlook.com----Password1234----recovery@example.com
+example_user_2@hotmail.com----Password5678----recovery@example.com

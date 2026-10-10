@@ -1,0 +1,10 @@
+{
+  "outlook_accounts_file": "./output/mailboxes/outlook-accounts.txt",
+  "proxy": "http://127.0.0.1:7897",
+  "register_count": 5,
+  "multi_thread_enabled": true,
+  "multi_thread_workers": 5,
+  "proxy_pool_max_concurrent_per_node": 5,
+  "turnstile_wait_timeout": 600,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+}
